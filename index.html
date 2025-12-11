@@ -6,7 +6,7 @@
     <title>equinox</title>
     <style>
         body {
-            animation: EquinoxTransition 0.5s linear infinite;
+            animation: EquinoxTransition 0.3s linear infinite;
         }
        #da {
         user-select: none;
@@ -72,7 +72,7 @@
     </style>
 </head>
 <body>
-    <span id="da" style="animation: filler 0.5s infinite, EquinoxTransition 0.5s linear infinite, EquinoxPulse 2s linear infinite;">『EQUINOX』</span>
+    <span id="da" style="animation: filler 0.3s infinite, EquinoxTransition 0.3s linear infinite, EquinoxPulse 1.6s linear infinite;">『EQUINOX』</span>
     <button id="toggleSound">🔊 Unmute</button>
     <audio autoplay loop muted id="sfx1" src="KoraiiLayersCut.mp3.mpeg"></audio>
 
@@ -82,7 +82,7 @@
         btn.addEventListener("click", () => {
             if (audio.muted) {
                 audio.muted = false;
-                audio.volume = 1.0;
+                audio.volume = 0.5 ;
                 btn.textContent = "🔇 Mute";
                 audio.play().catch(()=>{});
             } else {
